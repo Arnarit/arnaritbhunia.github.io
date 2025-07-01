@@ -12,168 +12,184 @@
 </head>
 <body>
     <div id="canvas-container"></div>
+<header>
+    <nav class="container">
+        <a href="#" class="nav-logo">AB</a>
+        <ul>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#education" class="nav-item">Education</a></li>
+            <li><a href="#certifications" class="nav-item">Certifications</a></li>
+            <li><a href="#contact" class="btn-contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <header>
-        <nav class="container">
-            <a href="#" class="nav-logo">AB</a>
-            <ul>
-                <li><a href="#skills" class="nav-item">Skills</a></li>
-                <li><a href="#projects" class="nav-item">Projects</a></li>
-                <li><a href="#education" class="nav-item">Education</a></li>
-                <li><a href="#certifications" class="nav-item">Certifications</a></li>
-                <li><a href="#contact" class="btn-contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="hero" class="container">
-            <div class="hero-content">
-                <img src="profile.jpg" alt="Arnarit Bhunia" class="profile-pic">
-                <h1>Arnarit Bhunia</h1>
-                <p class="subtitle">AI Engineer specializing in Generative & Agentic AI</p>
-                <p class="hero-description">A motivated and results-oriented individual building cutting-edge AI solutions that are intelligent, autonomous, and impactful.</p>
-                <div class="hero-links">
-                    <a href="Arnarit Bhunia (Latest CV).pdf" class="btn" download>
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
-                </div>
+<main>
+    <section id="hero" class="container">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Arnarit Bhunia" class="profile-pic">
+            <h1>Arnarit Bhunia</h1>
+            <p class="subtitle">AI Engineer specializing in Generative & Agentic AI</p>
+            <p class="hero-description">A motivated and results-oriented individual building cutting-edge AI solutions that are intelligent, autonomous, and impactful.</p>
+            <div class="hero-links">
+                <a href="Arnarit Bhunia (Latest CV).pdf" class="btn" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- The rest of your sections (Skills, Projects, etc.) remain exactly the same as the previous version -->
-        <section id="skills" class="container content-section">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Core AI Skills</h3>
-                    <ul>
-                        <li>Deep Learning</li>
-                        <li>Natural Language Processing</li>
-                        <li>LLM Transformers</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Specializations</h3>
-                    <ul>
-                        <li>RAG Pipelines</li>
-                        <li>Multi-Agent Systems</li>
-                        <li>LLMOps</li>
-                    </ul>
-                </div>
-            </div>
-            <h3 class="subsection-title">Tools & Frameworks</h3>
-            <div class="tools-grid">
-                <div class="tool-tag">LangChain</div>
-                <div class="tool-tag">LangGraph</div>
-                <div class="tool-tag">Langflow</div>
-                <div class="tool-tag">Langsmith</div>
-                <div class="tool-tag">Ollama</div>
-                <div class="tool-tag">Streamlit</div>
-                <div class="tool-tag">Groq</div>
-                <div class="tool-tag">Agno</div>
-            </div>
-        </section>
-
-        <section id="projects" class="container content-section">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-card major-project">
-                <div class="project-header">
-                    <h3>Gen-AI Based Fitness Trainer</h3>
-                    <a href="https://ai-powered-fitness-trainer-using-gemini9934.streamlit.app/" class="deploy-link" target="_blank" title="Deploy Link">
-                        <i class="fas fa-rocket"></i>
-                    </a>
-                </div>
-                <ul class="project-features">
-                    <li><i class="fas fa-cogs"></i><strong>Multi-Modal Interface:</strong> Developed a comprehensive AI coach using Python and Streamlit, accepting text, image, PDF, and video inputs.</li>
-                    <li><i class="fas fa-brain"></i><strong>Advanced RAG Pipeline:</strong> Engineered a zero-hallucination Q&A system using LangChain, PyPDF2, and FAISS for factual answers from medical reports.</li>
-                    <li><i class="fas fa-video"></i><strong>Dynamic Content Analysis:</strong> Integrated Google's Gemini Flash API for robust analysis of video and image content, with asynchronous polling for large media uploads.</li>
-                    <li><i class="fas fa-comments"></i><strong>Stateful UI/UX:</strong> Designed a user-friendly and stateful interface with Streamlit, ensuring effective chat history management and robust backend processes.</li>
+    <section id="skills" class="container content-section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>MySQL</li>
                 </ul>
-                <div class="tech-stack">
-                    <span>Python</span><span>Streamlit</span><span>LangChain</span><span>Gemini API</span><span>FAISS</span>
-                </div>
             </div>
-             <h3 class="subsection-title">Mini-Projects</h3>
-            <div class="mini-projects-grid">
-                 <div class="project-card"><h4>Q&A Chatbot</h4></div>
-                 <div class="project-card"><h4>Image-based Q&A Bot</h4></div>
-                 <div class="project-card"><h4>LLM-based Tracking System</h4></div>
-                 <div class="project-card"><h4>Multi-PDF Chat Application</h4></div>
-                 <div class="project-card"><h4>Financial AI Agent</h4></div>
+            <div class="skill-category">
+                <h3>Core AI Skills</h3>
+                <ul>
+                    <li>Deep Learning</li>
+                    <li>Natural Language Processing</li>
+                    <li>LLM Transformers</li>
+                </ul>
             </div>
-        </section>
+            <div class="skill-category">
+                <h3>Specializations</h3>
+                <ul>
+                    <li>RAG Pipelines</li>
+                    <li>Multi-Agent Systems</li>
+                    <li>LLMOps</li>
+                </ul>
+            </div>
+        </div>
+        <h3 class="subsection-title">Tools & Frameworks</h3>
+        <div class="tools-grid">
+            <div class="tool-tag">LangChain</div>
+            <div class="tool-tag">LangGraph</div>
+            <div class="tool-tag">Langflow</div>
+            <div class="tool-tag">Langsmith</div>
+            <div class="tool-tag">Ollama</div>
+            <div class="tool-tag">Streamlit</div>
+            <div class="tool-tag">Groq</div>
+            <div class="tool-tag">Agno</div>
+        </div>
+    </section>
 
-        <section id="education" class="container content-section">
-            <h2 class="section-title">Education</h2>
-            <div class="education-item">
-                <p class="education-year">2021 - 2025</p>
-                <h3><a href="https://stcet.ac.in/" target="_blank">St. Thomas' College of Engineering and Technology</a></h3>
-                <p>B.Eng in Electronics & Communications | <strong>88.2%</strong></p>
+    <section id="projects" class="container content-section">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-card major-project">
+            <div class="project-header">
+                <h3>Gen-AI Based Fitness Trainer</h3>
+                <a href="https://ai-powered-fitness-trainer-using-gemini9934.streamlit.app/" class="deploy-link" target="_blank" title="Deploy Link">
+                    <i class="fas fa-rocket"></i>
+                </a>
             </div>
-            <div class="education-item">
-                <p class="education-year">2019 - 2020</p>
-                <h3><a href="https://santragachi.kvs.ac.in/" target="_blank">Kendriya Vidyalaya Santragachi</a></h3>
-                <p>Senior Secondary (Class XII) | <strong>87.4%</strong></p>
+            <ul class="project-features">
+                <li><i class="fas fa-cogs"></i><strong>Multi-Modal Interface:</strong> Developed a comprehensive AI coach using Python and Streamlit, accepting text, image, PDF, and video inputs.</li>
+                <li><i class="fas fa-brain"></i><strong>Advanced RAG Pipeline:</strong> Engineered a zero-hallucination Q&A system using LangChain, PyPDF2, and FAISS for factual answers from medical reports.</li>
+                <li><i class="fas fa-video"></i><strong>Dynamic Content Analysis:</strong> Integrated Google's Gemini Flash API for robust analysis of video and image content, with asynchronous polling for large media uploads.</li>
+                <li><i class="fas fa-comments"></i><strong>Stateful UI/UX:</strong> Designed a user-friendly and stateful interface with Streamlit, ensuring effective chat history management and robust backend processes.</li>
+            </ul>
+            <div class="tech-stack">
+                <span>Python</span><span>Streamlit</span><span>LangChain</span><span>Gemini API</span><span>FAISS</span>
             </div>
-            <div class="education-item">
-                <p class="education-year">2017 - 2018</p>
-                <h3><a href="https://santragachi.kvs.ac.in/" target="_blank">Kendriya Vidyalaya Santragachi</a></h3>
-                <p>Secondary (Class X) | <strong>82.4%</strong></p>
-            </div>
-        </section>
-        
-        <section id="certifications" class="container content-section">
-            <h2 class="section-title">Certifications & Achievements</h2>
-            <div class="cert-grid">
-                <div class="cert-item" data-cert="certificates/ai_engineer_cert.png">
-                    <i class="fas fa-brain"></i>
-                    <h4>AI Engineer Certification</h4>
-                    <p>One Roadmap Skill Certification Test for AI Engineers.</p>
-                </div>
-                <div class="cert-item" data-cert="certificates/aincat.png">
-                    <i class="fas fa-trophy"></i>
-                    <h4>AIR 90th in AINCAT 2025</h4>
-                    <p>India's Biggest Career Aptitude Test by Naukri Campus.</p>
-                </div>
-                <div class="cert-item" data-cert="certificates/prasar_bharati.png">
-                    <i class="fas fa-award"></i>
-                    <h4>Vocational Training</h4>
-                    <p>Signal Transmission at All India Radio (Prasar Bharati).</p>
-                </div>
-            </div>
-        </section>
+        </div>
+         <h3 class="subsection-title">Mini-Projects</h3>
+        <div class="mini-projects-grid">
+             <div class="project-card"><h4>Q&A Chatbot</h4></div>
+             <div class="project-card"><h4>Image-based Q&A Bot</h4></div>
+             <div class="project-card"><h4>LLM-based Tracking System</h4></div>
+             <div class="project-card"><h4>Multi-PDF Chat Application</h4></div>
+             <div class="project-card"><h4>Financial AI Agent</h4></div>
+        </div>
+    </section>
 
-        <section id="contact" class="container content-section">
-             <h2 class="section-title">Get In Touch</h2>
-             <div class="contact-links">
-                <a href="mailto:arnaritbhunia1234@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+91-9875423404" title="Call"><i class="fas fa-phone"></i></a>
-                <a href="https://www.linkedin.com/in/arnarit-bhunia-030113241" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Arnarit" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-             </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2024 Arnarit Bhunia. Designed with passion.</p>
-    </footer>
-
-    <div id="modal" class="modal">
-        <span class="close-modal">×</span>
-        <img class="modal-content" id="modal-img">
-    </div>
+    <section id="education" class="container content-section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <p class="education-year">2021 - 2025</p>
+            <h3><a href="https://stcet.ac.in/" target="_blank">St. Thomas' College of Engineering and Technology</a></h3>
+            <p>B.Eng in Electronics & Communications | <strong>88.2%</strong></p>
+        </div>
+        <div class="education-item">
+            <p class="education-year">2019 - 2020</p>
+            <h3><a href="https://santragachi.kvs.ac.in/" target="_blank">Kendriya Vidyalaya Santragachi</a></h3>
+            <p>Senior Secondary (Class XII) | <strong>87.4%</strong></p>
+        </div>
+        <div class="education-item">
+            <p class="education-year">2017 - 2018</p>
+            <h3><a href="https://santragachi.kvs.ac.in/" target="_blank">Kendriya Vidyalaya Santragachi</a></h3>
+            <p>Secondary (Class X) | <strong>82.4%</strong></p>
+        </div>
+    </section>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="script.js"></script>
+    <section id="certifications" class="container content-section">
+        <h2 class="section-title">Certifications & Achievements</h2>
+        <div class="cert-grid">
+            <div class="cert-item" data-cert="certificates/ai_engineer_cert.png">
+                <i class="fas fa-brain"></i>
+                <h4>AI Engineer Certification</h4>
+                <p>One Roadmap Skill Certification Test for AI Engineers.</p>
+            </div>
+            <div class="cert-item" data-cert="certificates/aincat.png">
+                <i class="fas fa-trophy"></i>
+                <h4>AIR 90th in AINCAT 2025</h4>
+                <p>India's Biggest Career Aptitude Test by Naukri Campus.</p>
+            </div>
+            <div class="cert-item" data-cert="certificates/prasar_bharati.png">
+                <i class="fas fa-award"></i>
+                <h4>Vocational Training</h4>
+                <p>Signal Transmission at All India Radio (Prasar Bharati).</p>
+            </div>
+            <!-- === NEW CERTIFICATES START HERE === -->
+            <div class="cert-item" data-cert="certificates/deloitte_cyber.png">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Deloitte Cyber Job Sim</h4>
+                <p>Virtual work experience in Cyber Security. Issued by Forage.</p>
+            </div>
+            <div class="cert-item" data-cert="certificates/deloitte_data.png">
+                <i class="fas fa-chart-line"></i>
+                <h4>Deloitte Data Analytics Sim</h4>
+                <p>Experience in Data Analysis and Forensic Technology. Issued by Forage.</p>
+            </div>
+            <div class="cert-item" data-cert="certificates/tata_genai.png">
+                <i class="fas fa-robot"></i>
+                <h4>TATA GenAI Data Analytics Sim</h4>
+                <p>GenAI-powered data analytics and AI-driven collections strategy.</p>
+            </div>
+            <!-- === NEW CERTIFICATES END HERE === -->
+        </div>
+    </section>
+
+    <section id="contact" class="container content-section">
+         <h2 class="section-title">Get In Touch</h2>
+         <div class="contact-links">
+            <a href="mailto:arnaritbhunia1234@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+91-9875423404" title="Call"><i class="fas fa-phone"></i></a>
+            <a href="https://www.linkedin.com/in/arnarit-bhunia-030113241" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Arnarit" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+         </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2024 Arnarit Bhunia. Designed with passion.</p>
+</footer>
+
+<div id="modal" class="modal">
+    <span class="close-modal">×</span>
+    <img class="modal-content" id="modal-img">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
 
