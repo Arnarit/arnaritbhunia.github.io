@@ -4,7 +4,7 @@
     --primary-color: #9333ea; /* A richer purple */
     --secondary-color: #3b82f6; /* A brighter blue */
     /* New text color: A light, readable grey instead of pure white */
-    --text-color: #e5e7eb; 
+    --text-color: #e5e7eb;
     --header-height: 70px;
 }
 
@@ -52,41 +52,37 @@ header {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
-
 .nav-logo {
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--primary-color);
     text-decoration: none;
 }
-
 header ul {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 15px; /* Reduced gap for boxed items */
 }
-
 header ul a {
     text-decoration: none;
     font-weight: 500; /* Bolder nav text */
     transition: all 0.3s ease;
 }
 
-/* NEW: Boxed style for nav items */
 .nav-item {
     color: var(--text-color);
     padding: 8px 16px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
 }
+
 .nav-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-color: var(--primary-color);
@@ -104,8 +100,6 @@ header ul a {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(147, 51, 234, 0.5);
 }
-
-
 /* --- General Section Styling --- */
 .content-section {
     padding: 100px 0;
@@ -115,7 +109,6 @@ header ul a {
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
-
 .content-section.visible {
     opacity: 1;
     transform: translateY(0);
@@ -134,7 +127,6 @@ header ul a {
     margin-bottom: 30px;
 }
 
-/* UPDATED: Hero Section Layout */
 #hero {
     height: 100vh;
     display: flex;
@@ -149,18 +141,18 @@ header ul a {
 }
 
 .profile-pic {
-    width: 130px;
-    height: 130px;
+    width: 150px;  /* UPDATED */
+    height: 150px; /* UPDATED */
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--primary-color);
-    margin-bottom: 40px; /* Increased space as per image */
+    margin-bottom: 40px; 
     box-shadow: 0 0 30px rgba(147, 51, 234, 0.6);
     background-color: var(--primary-color); /* Glow effect */
 }
 
 .hero-content h1 {
-    font-size: 4.5rem; /* Slightly larger */
+    font-size: 4.5rem;
     font-weight: 700;
     background: -webkit-linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
@@ -169,15 +161,15 @@ header ul a {
 
 .subtitle {
     font-size: 1.5rem;
-    font-weight: 400; /* Regular weight for subtitle */
+    font-weight: 400;
     margin-bottom: 20px;
-    color: #a0aec0; /* Softer color for subtitle */
+    color: #a0aec0;
 }
 
 .hero-description {
     max-width: 550px;
     line-height: 1.7;
-    font-weight: 500; /* Bolder paragraph text */
+    font-weight: 500;
     margin-bottom: 30px;
 }
 
@@ -197,13 +189,10 @@ header ul a {
 }
 .btn i { margin-right: 10px; }
 
-/* Making other text bold as requested */
 .project-features li, .education-item p, .cert-item p {
     font-weight: 500;
 }
 
-/* --- Rest of the CSS remains the same as the previous version --- */
-/* (Skills, Projects, Education, Certifications, Contact, Footer, Modal) */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
 .skill-category { background: linear-gradient(145deg, rgba(40, 40, 40, 0.7), rgba(20, 20, 20, 0.7)); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px); transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .skill-category:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); border-color: var(--primary-color); }
@@ -211,9 +200,11 @@ header ul a {
 .skill-category ul { list-style: none; }
 .skill-category ul li { margin-bottom: 10px; font-size: 1rem; }
 .skill-category ul li::before { content: '▹'; margin-right: 10px; color: var(--primary-color); }
+
 .tools-grid { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px; }
 .tool-tag { background: rgba(255, 255, 255, 0.1); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: 500; border: 1px solid transparent; transition: all 0.3s ease; }
 .tool-tag:hover { border-color: var(--primary-color); color: white; transform: translateY(-3px); }
+
 .project-card { background: var(--surface-color); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px); }
 .project-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
 .deploy-link { font-size: 2rem; color: var(--secondary-color); transition: color 0.3s, transform 0.3s; }
@@ -223,21 +214,27 @@ header ul a {
 .project-features i { color: var(--primary-color); margin-right: 15px; width: 20px; text-align: center; }
 .tech-stack { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
 .tech-stack span { background: rgba(255, 255, 255, 0.1); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; font-family: 'Roboto Mono', monospace; }
+
 .mini-projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
 .mini-projects-grid .project-card { text-align: center; transition: transform 0.3s ease; }
 .mini-projects-grid .project-card:hover{ transform: translateY(-5px); }
+
 .education-item { margin-bottom: 20px; border-left: 3px solid var(--primary-color); padding-left: 20px; }
 .education-item h3 a { color: white; text-decoration: none; font-size: 1.2rem; transition: color 0.3s; }
 .education-item h3 a:hover { color: var(--primary-color); }
 .education-year { float: right; color: var(--secondary-color); font-weight: 600; }
+
 .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 .cert-item { cursor: pointer; text-align: center; background: var(--surface-color); padding: 30px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s; }
 .cert-item:hover { transform: translateY(-10px); }
 .cert-item i { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px; }
+
 .contact-links { display: flex; justify-content: center; gap: 40px; }
 .contact-links a { font-size: 2.5rem; color: var(--text-color); transition: color 0.3s ease, transform 0.3s ease; }
 .contact-links a:hover { color: var(--primary-color); transform: translateY(-5px); }
+
 footer { text-align: center; padding: 30px; margin-top: 50px; color: rgba(255,255,255,0.5); }
+
 .modal { display: none; position: fixed; z-index: 101; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); align-items: center; justify-content: center; }
 .modal-content { display: block; max-width: 80vw; max-height: 80vh; }
 .close-modal { position: absolute; top: 30px; right: 50px; color: #fff; font-size: 50px; font-weight: bold; cursor: pointer; }
