@@ -3,7 +3,6 @@
     --surface-color: rgba(26, 26, 26, 0.6);
     --primary-color: #9333ea; /* A richer purple */
     --secondary-color: #3b82f6; /* A brighter blue */
-    /* New text color: A light, readable grey instead of pure white */
     --text-color: #e5e7eb;
     --header-height: 70px;
 }
@@ -20,8 +19,10 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    /* UPDATED: Added a subtle radial gradient for a deep space effect */
     background-color: var(--bg-color);
-    color: var(--text-color); /* Applying new text color */
+    background-image: radial-gradient(ellipse at center, hsl(255, 30%, 10%) 0%, #0a0a0a 70%);
+    color: var(--text-color);
     overflow-x: hidden;
 }
 
@@ -68,11 +69,11 @@ header ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 15px; /* Reduced gap for boxed items */
+    gap: 15px;
 }
 header ul a {
     text-decoration: none;
-    font-weight: 500; /* Bolder nav text */
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
@@ -91,7 +92,7 @@ header ul a {
 
 .btn-contact {
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    padding: 9px 22px; /* Slightly larger than nav-item */
+    padding: 9px 22px;
     border-radius: 20px;
     color: white !important;
     border: none;
@@ -131,24 +132,24 @@ header ul a {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align content block to the left */
+    justify-content: flex-start;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items inside the block to the left */
+    align-items: flex-start;
 }
 
 .profile-pic {
-    width: 150px;  /* UPDATED */
-    height: 150px; /* UPDATED */
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--primary-color);
     margin-bottom: 40px; 
     box-shadow: 0 0 30px rgba(147, 51, 234, 0.6);
-    background-color: var(--primary-color); /* Glow effect */
+    background-color: var(--primary-color);
 }
 
 .hero-content h1 {
